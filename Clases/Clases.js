@@ -1,56 +1,48 @@
 class   Usuarios {
-    constructor(nombre,apellidos,libros,mascotas){
+    constructor(nombre,apellidos){
     this.nombre=nombre
     this.apellidos=apellidos
-    this.libros=libros
-    this.mascotas=mascotas
+    this.libros=[];
+    this.mascotas=[];
     }
     getFullName() {
-        console.log( `El Nombre de usuario es: ${this.nombre} ${this.apellidos}`)
+    return `${this.nombre} ${this.apellidos}`
    }
   
     addMascotas(nuevaMascota){
-       this.mascotas.push(nuevaMascota)
+       this.mascotas.push(nuevaMascota);
        
     }
 
     countMascotas(){
-    console.log(`Cantidad de Mascotas es:${this.mascotas.length}`)
+    return this.mascotas.lentgh;
     }
     
     addBook(nombre,autor){
-        this.libros.push({
+        const book ={
             nombre: nombre,
             autor:autor
-        });
+        }
+        this.libros.push(book)
+          
     }
     getBookNames(){
         let bookName=[]
-        this.libros.forEach((libro)=>bookName.push(libro.nombre));
+        this.libros.map((libro)=>bookName.push(libro.nombre));
         return bookName;
       
     }
-    nombresIte(nombreLibros) {
-        nombreLibros.forEach((nombre) => {
-          console.log(`Libros de Horror en Coleccion: ${nombre}`);
-        });
-      }
     
 };
 
 
-const usuario = new Usuarios(
-    "Hector",
-    "Mamani",
-    [
-        {nombre: "It", autor:"Stephen King"},
-        {nombre: "Carrie", autor:"Stephen King"}
-    ],
-    ["perro","gato"]
-);
-usuario.getFullName();
+const usuario = new Usuarios("Hector","Mamani");
+
+console.log(usuario.getFullName());
 usuario.addMascotas("Conejo");
-usuario.countMascotas();
+usuario.addMascotas("Perro")
+console.log(usuario.countMascotas());
 usuario.addBook("Misery","Stephen King")
-let bookName= usuario.getBookNames()
-usuario.nombresIte(bookName)
+usuario.addBook("it","Stephen King")
+console.log(usuario.getBookNames());
+
