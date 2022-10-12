@@ -1,0 +1,21 @@
+[
+	{
+		"title": "Conjunto a cuadros",
+		"price": 1500,
+		"thumbnail": "https://raw.githubusercontent.com/HectorMamani18/mytiendamamani/master/public/img/cuadros.jpg",
+		"id": 1
+	},
+	{
+		"title": "Smoking",
+		"price": 2000,
+		"thumbnail": "https://raw.githubusercontent.com/HectorMamani18/mytiendamamani/master/public/img/Smoking.jpg",
+		"id": 2
+	},
+	{
+		"title": "Saco Largo",
+		"price": 2500,
+		"thumbnail": "https://raw.githubusercontent.com/HectorMamani18/mytiendamamani/master/public/img/9c213c12dfe2d92aeda21d5e5d6dc127--hombre-casual-look.jpg",
+		"id": 3
+	}
+
+]
