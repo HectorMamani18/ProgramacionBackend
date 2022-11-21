@@ -1,0 +1,65 @@
+.body{
+  background-color: rgb(47, 148, 134);
+}
+
+
+.tituloCentrado {
+  text-align: center;
+}
+.tituloCentrado2 {
+  text-align: end;
+  display: block;
+  position:absolute;
+  top: 0%;
+  right: 1%;
+}
+.Centrado2{
+  
+  display: block;
+  position:absolute;
+  top: 10%;
+  right: 1%;
+  width: 20%;
+  
+}
+.Centrado3{
+  display: flex;
+  justify-content: center;
+}
+
+.Centrado {
+  display: flex;
+  justify-content: left;
+}
+
+.imagenAdaptada {
+  height: 50px;
+  width: 50px;
+}
+
+.textWhite {
+  color: white;
+  text-decoration: none;
+}
+
+.separacion {
+  margin-top: 20px;
+}
+
+.emailAzulNegrita {
+  color: blue;
+  font-weight: bold;
+}
+
+.horaRojo {
+  color: red;
+}
+
+.mensajeVerdeCursiva {
+  color: green;
+  font-style: italic;
+}
+
+.mensajeFinal {
+  display: flex;
+}
