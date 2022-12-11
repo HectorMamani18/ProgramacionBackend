@@ -4,7 +4,7 @@ export const dbConfig = {
   development: {
     client: "mysql",
     connection: {
-      host: "127.0.0.1:3307",
+      host: "localhost",
       user: "root",
       port: 3307,
       password: "3899",
